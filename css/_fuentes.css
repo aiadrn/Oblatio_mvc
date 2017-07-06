@@ -1,0 +1,24 @@
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+.Arvo{
+    font-family: 'Arvo', serif;
+}
+.FuenteTitulo {
+    font-family: 'Lato', sans-serif;
+    /*font-family: 'Chewy', cursive;*/
+    
+}
+.Montserrat{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.tamanioFuente1{
+    font-size: 18px;
+}
+.tamanioFuente2{
+    font-size: 30px;
+}
+.tamanioFuente3{
+    font-size: 30px;
+}
