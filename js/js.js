@@ -1,4 +1,5 @@
-$.cookie('Prueba');
+//$.cookie('Prueba');
+     
 var contraido = $.cookie('Prueba');
 if (contraido != 'true') {
     $('#d2_1').css('left', '0%');
@@ -18,7 +19,6 @@ $(document).ready(function () {
     $("tr:even").css("background-color", "#FDFDFD"); // filas impares
     $("#d2_1 nav a p:odd").css("border", "3px #f100ff solid"); // filas pares
     $("#d2_1 nav a p:even").css("border", "3px #00c0ef solid"); // filas impares
-
     $("#d1_4").click(function () {
         if (contraido != 'true') {
             $('#d2_1').animate({left: "-13%"}, 'fast');
@@ -52,5 +52,6 @@ $(document).ready(function () {
             $('#' + e.target.id).css('margin', "0px 0px 0px 0");
         }
     });
+    
 });
 

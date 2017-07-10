@@ -9,15 +9,14 @@
     </head>
     <body>
         <div class="container" >
-            
+
             <?php require_once 'view/' . $vista . '.php'; ?>
 
 
         </div>
         <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
-
+        <script src="js/jsLogin.js" type="text/javascript"></script>        
     </body>
 
 </html>
