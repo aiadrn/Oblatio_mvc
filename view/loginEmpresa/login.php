@@ -13,14 +13,6 @@
                 </div>
             </div>
         <?php } ?>
-        <!--        <div class="row">
-                    <div id="alert" class="col-xs-12">
-                        <div class="alert alert-success">
-                            
-                        </div>
-        
-                    </div>
-                </div>-->
         <div class="row">
             <div id="d11" class="col-xs-12 form-group">
                 <label>Ingrese Nombre de Usuario o Correo</label>  
