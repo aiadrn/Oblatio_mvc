@@ -10,7 +10,6 @@
                     <div class="alert alert-danger">
                         <?php echo (isset($message) && $message != "") ? $message : ""; ?>
                     </div>
-
                 </div>
             </div>
         <?php } ?>
@@ -21,7 +20,6 @@
             </div> 
         </div>
         <div class="row">
-
             <div id="d13" class="col-xs-12 form-group">
                 <label>Ingrese Contraseña</label>
                 <input type = "password" name="contrasenna" class="form-control"/>
@@ -40,7 +38,6 @@
                     Olvidó Contraseña
                     <i class="glyphicon glyphicon-question-sign"></i>
                 </a>
-
             </div>
         </div>
     </div>

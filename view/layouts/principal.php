@@ -181,7 +181,7 @@
             <?php } ?>        
             <div class="row">
                 <div id="" class="col-xs-12 form-group">
-                    <label>Ingrese Alias o Correooooooo</label>  
+                    <label>Ingrese Alias o Correo</label>  
                     <input type = "text" name="correo" class="form-control"/>
                 </div> 
             </div>
@@ -207,7 +207,7 @@
                 </div>
             </div>
         </div>
-
+        
          <!--Modal usuario--> 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">

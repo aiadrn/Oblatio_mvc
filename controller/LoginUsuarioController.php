@@ -1,35 +1,25 @@
 <?php
-
 class LoginUsuarioController extends ControladorBase {
-
     public $conectar;
     public $adapter;
-
     public function __construct() {
         parent::__construct();
-
         $this->conectar = new Conectar();
         $this->adapter = $this->conectar->conexion();
     }
-
     public function index() {
         $this->layout = 'loginUsuario';
         $this->view("loginUsuario/login");
     }
-
     public function login() {
-
         if (isset($_POST["correo"]) && isset($_POST["contrasenna"])) {
             $correo = isset($_POST["correo"]) ? trim($_POST["correo"]) : "";
             $contrasenna = isset($_POST["contrasenna"]) ? trim(sha1($_POST["contrasenna"])) : "";
-
             if ($correo == '' || $contrasenna == '') {
                 $this->layout = 'loginUsuario';
-
                 $this->view("loginUsuario/login", array(
                     "message" => "El usuario o contraseña no pueden ir vacíos"));
             } else {
-
                 //creamos un objeto                
                 $usuario = new Usuario($this->adapter);
                 $usuario->setUsu_correo($correo);
@@ -48,7 +38,6 @@ class LoginUsuarioController extends ControladorBase {
             $this->view("loginUsuario/login");
         }
     }
-
     public function logout() {
         //destruir todas las sesiones
 //         $_SESSION['adm_tipo_administrador']=0;
@@ -56,7 +45,6 @@ class LoginUsuarioController extends ControladorBase {
         $this->redirect("Principal", "index");
         //$this->view("login/login");
     }
-
     public function error($code = 0) {
         $codeMessagge = (isset($_GET['msg']) ? $_GET['msg'] : $code);
         $message = "";
@@ -75,5 +63,4 @@ class LoginUsuarioController extends ControladorBase {
             "message" => $message
         ));
     }
-
 }

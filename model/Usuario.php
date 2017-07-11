@@ -131,7 +131,6 @@ class Usuario extends EntidadBase {
                        $this->fk_ciu_id); ";
         //echo $query;
         $save = $this->db()->query($query);
-
         //echo "SQL> ".$query;
         //$this->db()->error;
         return $save;
@@ -152,7 +151,6 @@ class Usuario extends EntidadBase {
                 WHERE usu_cod=$this->usu_cod";
         echo $query;
         $update = $this->db()->query($query);
-
         //echo "SQL> ".$query;
         //$this->db()->error;
         return $update;
@@ -177,14 +175,12 @@ class Usuario extends EntidadBase {
         $resultSet = null;
         $sentencia = "SELECT * FROM usuario WHERE usu_correo='$this->usu_correo'";
         $query = $this->db()->query($sentencia);
-
         if ($row = $query->fetch_object()) {
             //echo $sentencia;
             /* se compara la contraseña ingresada por el usuario en el formulario
               del loguin con la que se encuentra almacenada en la base de datos */
             $password = $this->getUsu_contrasena();
             $hash = $row->usu_contrasena;
-
             if ($password == $hash) {
 //                $_SESSION['adm_tipo_administrador'] = $row->adm_tipo_administrador;
                 $_SESSION['nombre'] = $row->usu_alias;
@@ -197,8 +193,6 @@ class Usuario extends EntidadBase {
         }
         return $validacion;
     }
-
 }
-
 ?>
 
