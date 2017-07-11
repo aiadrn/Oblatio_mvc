@@ -87,7 +87,7 @@
             </div>
         </div>  
 
-<!--        <div id="loginU" class="hidden col-xs-12 col-md-4  well col-md-offset-4">
+        <div id="loginU" class="hidden col-xs-12 col-md-4  well col-md-offset-4">
             <?php if (isset($message)) {
                 ?>
                 <div class="row">
@@ -166,7 +166,7 @@
                     </a>
                 </div>
             </div>
-        </div>-->
+        </div>
 
         <div id="loginA" class="hidden col-xs-12 col-md-4  well col-md-offset-4">
             <?php if (isset($message)) {
@@ -208,7 +208,7 @@
             </div>
         </div>
 
-         Modal usuario 
+         <!--Modal usuario--> 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -225,7 +225,7 @@
             </div>
         </div>
 
-         Modal empresa 
+         <!--Modal empresa--> 
         <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
