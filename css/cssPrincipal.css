@@ -244,8 +244,9 @@ td, th{
 }
 .enlacesA:hover{
     color: #ffffff;
-    background-color: #222D32;
-    border-bottom: 2px #f100ff dashed;
+    background-color: #5bc0de;
+    border-bottom: 1px #000000 dashed;
+    border-top: 1px #000000 dashed;
     text-decoration:none;
 }
 .ajusteBoton{

@@ -20,6 +20,7 @@ class Administrador extends EntidadBase {
     private $adm_correo;
     private $adm_alias;
     private $adm_contrasena;
+    private $adm_foto_perfil;
     private $adm_tipo_administrador;
 
     public function __construct($adapter) {
@@ -89,8 +90,16 @@ class Administrador extends EntidadBase {
     function setAdm_contrasena($adm_contrasena) {
         $this->adm_contrasena = $adm_contrasena;
     }
+    
+    function getAdm_foto_perfil() {
+        return $this->adm_foto_perfil;
+    }
 
-    public function save() {
+    function setAdm_foto_perfil($adm_foto_perfil) {
+        $this->adm_foto_perfil = $adm_foto_perfil;
+    }
+
+        public function save() {
         $query = "INSERT INTO administrador
                 VALUES($this->adm_id, 
                        '" . $this->adm_nombre . "',
@@ -99,6 +108,7 @@ class Administrador extends EntidadBase {
                        '" . $this->adm_correo . "',
                        '" . $this->adm_alias . "',
                        '" . $this->adm_contrasena . "',
+                       '" . $this->adm_foto_perfil. "',
                        '" . $this->adm_tipo_administrador . "'); ";
         echo $query;  
         $save = $this->db()->query($query);
@@ -115,7 +125,9 @@ class Administrador extends EntidadBase {
                 adm_telefono='" . $this->adm_telefono . "',
                 adm_correo='" . $this->adm_correo . "',
                 adm_alias='" . $this->adm_alias . "',
-                adm_contrasena='" . $this->adm_contrasena . "'
+                adm_contrasena='" . $this->adm_contrasena . "',
+                adm_foto_perfil='" . $this->adm_foto_perfil . "',
+                adm_tipo_administrador = $this->adm_tipo_administrador
                 WHERE adm_id = $this->adm_id";
         echo $query;
         $update = $this->db()->query($query);

@@ -32,6 +32,10 @@
             <label>Contraseña</label>  
             <input type = "password" name="contrasena" class="form-control"/>
         </div>
+        <div id="" class="col-xs-12 form-group">
+            <label>Foto de Perfil</label>  
+            <input type = "text" name="foto" class="form-control"/>
+        </div>
         <div id="" class="col-xs-12">
             <button id="btnCrear"  class="btn btn-success btn-block">
                 Guardar <i class="glyphicon glyphicon-cd"></i>

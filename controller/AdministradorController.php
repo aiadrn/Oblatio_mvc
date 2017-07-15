@@ -63,6 +63,7 @@ class AdministradorController extends ControladorBase {
             $administrador->setAdm_correo($_POST["correo"]);
             $administrador->setAdm_alias($_POST["alias"]);
             $administrador->setAdm_contrasena(sha1($_POST["contrasena"]));
+            $administrador->setAdm_foto_perfil($_POST["foto"]);
             $administrador->setAdm_tipo_administrador(0);
             $save = $administrador->save();
         }
@@ -102,6 +103,8 @@ class AdministradorController extends ControladorBase {
             $administrador->setAdm_correo($_POST["correo"]);
             $administrador->setAdm_alias($_POST["alias"]);
             $administrador->setAdm_contrasena(sha1($_POST["contrasena"]));
+            $administrador->setAdm_foto_perfil($_POST["foto"]);
+            $administrador->setAdm_tipo_administrador($_POST["tipoAdministrador"]);
             $administrador->update();
         }
         $this->redirect("Administrador", "index");

@@ -39,8 +39,8 @@
                     <td><?php echo $getEdit->adm_alias; ?></td>   
                 </tr>
                 <tr>
-                    <td><strong>Contraseña</strong></td> 
-                    <td><?php echo $getEdit->adm_contrasena; ?></td>
+                    <td><strong>Foto de Perfil</strong></td> 
+                    <td><?php echo $getEdit->adm_foto_perfil; ?></td>
                 </tr>
                 <tr>
                     <td><strong>Tipo de Administrador</strong></td> 

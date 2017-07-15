@@ -33,6 +33,14 @@
             <label>Contraseña</label>  
             <input type = "password" name="contrasena" class="form-control" value="<?php echo $getEdit->adm_contrasena ?>"/>
         </div>
+        <div id="" class="col-xs-12 form-group">
+            <label>Foto de Perfil</label>  
+            <input type = "text" name="foto" class="form-control" value="<?php echo $getEdit->adm_foto_perfil ?>"/>
+        </div>
+        <div id="" class="col-xs-12 form-group">
+            <label>Tipo de Administrador</label>  
+            <input type = "text" name="tipoAdministrador" class="form-control" value="<?php echo $getEdit->adm_tipo_administrador ?>"/>
+        </div>
         <div id="" class="col-xs-12">
             <button id=""  class="btn btn-primary btn-block">
                 Actualizar <i class="glyphicon glyphicon-saved"></i>
