@@ -29,30 +29,37 @@
                 </div>
                 <div id="d1_3" class="">
 
+                    <!--                    <div id="d1_3_2" class="">
+                                            <a href = "#">                            
+                                                Sesión Administrador
+                                            </a>
+                                        </div>
+                                        <div id="d1_3_1" class="">
+                                            <a href = "#">
+                                                Sesión Empresa
+                                            </a>
+                                        </div>
+                                        <div id="d1_3_4" class="">
+                                            <a href = "#">
+                                                Sesión Usuario
+                                            </a>
+                                        </div>-->
                     <div id="d1_3_2" class="">
-                        <a href = "#">                            
-                            Sesión Administrador
+                        <a href = "#">
+                            Iniciar Sesión
+                            <div class="contenedorCuentas">
+                                <div class="contenedorCuentasImagen">
+                                    <p class="imgCircular"></p>
+                                </div>
+                                <button class="btnSesionU btn btn-default">Usuario</button>
+                                <button class="btnSesionE btn btn-default">Empresa</button>
+                            </div>
                         </a>
                     </div>
                     <div id="d1_3_1" class="">
-                        <a href = "#">
-                            Sesión Empresa
-                        </a>
-                    </div>
-                    <div id="d1_3_4" class="">
-                        <a href = "#">
-                            Sesión Usuario
-                        </a>
-                    </div>
-                    <div id="d1_3_2" class="">
                         <a href = "<?php echo "index.php?controller=Info&action=index"; ?>">                            
                             Información
-                        </a>
-                    </div>
-                    <div id="d1_3_1" class="">
-                        <a href = "<?php echo "index.php?controller=LoginEmpresa&action=index"; ?>">
-                            Iniciar Sesión
-                        </a>
+                        </a>                           
                     </div>
                 </div>
             </div>
@@ -207,8 +214,8 @@
                 </div>
             </div>
         </div>
-        
-         <!--Modal usuario--> 
+
+        <!--Modal usuario--> 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -225,7 +232,7 @@
             </div>
         </div>
 
-         <!--Modal empresa--> 
+        <!--Modal empresa--> 
         <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -265,15 +272,15 @@
         <script src="js/js.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-                $('#d1_3_4').click(function () {
+                $('.btnSesionU').click(function () {
                     $('.modal-body').html($('#loginU').html());
                     $('#myModal').modal();
                 });
-                $('#d1_3_1').click(function () {
+                $('.btnSesionE').click(function () {
                     $('.modal-body').html($('#loginE').html());
                     $('#myModal2').modal();
                 });
-                $('#d1_3_2').click(function () {
+                $('#d1_3_').click(function () {
                     $('.modal-body').html($('#loginA').html());
                     $('#myModal3').modal();
                 });

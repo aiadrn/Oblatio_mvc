@@ -122,7 +122,7 @@ body{
     height: 100%;
     padding: 0px 0px;
     color: #ffffff;
-    margin-top: 14px;
+    margin-top: 14px;    
 }
 #d1_4{
     padding-top: 13px;
@@ -149,6 +149,10 @@ body{
 }
 #d2_1 nav a p{
     float: right;
+}
+#d1_3_1:hover, #d1_3_2:hover{
+    background-color: #357CA5;
+    height: 50px;
 }
 td, th{
     border: #A4A4A4 1px solid;
@@ -259,6 +263,50 @@ td, th{
 .ajusteSuperiorA{
     border-top: 1px #46b8da solid;
     border-radius: 4px 4px 0px 0px;
+}
+.contenedorCuentas{
+    width: 280px;
+    height: 180px;
+    background-color: #f9f9f9;
+    position: absolute;
+    right: 14px;
+    top: 51px;
+    padding: 0px !important;
+    border: 1px #8aa4af solid;
+    /*display: none;*/
+}
+.contenedorCuentasImagen{
+    width: 100%;
+    height: 120px; 
+    background-color: #3c8dbc;
+}
+.imgCircular{
+    width: 110px;
+    height: 110px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left;    
+    position: relative;
+    margin-top: 5px;
+    margin-left: 85px;
+    background-color:#f9f9f9; 
+    background-image: url('../images/logo_oblatio.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: 6px;
+
+}
+.btnSesionU, .btnSesionE{   
+    bottom: 10px;
+    width: 40%;
+    position: absolute;
+}
+.btnSesionU{
+    left: 10px;;
+}
+.btnSesionE{
+    right: 10px;
 }
 @media (min-width: 0px) and (max-width: 991px){
     #d2_1{
