@@ -183,7 +183,6 @@ td, th{
     /*min-width: 40%;*/
     /*margin-bottom: 20px;*/
 }
-
 .encabezado{
     border: none;
 }
@@ -269,11 +268,11 @@ td, th{
     height: 180px;
     background-color: #f9f9f9;
     position: absolute;
-    right: 14px;
+    right: 1%;
     top: 51px;
     padding: 0px !important;
     border: 1px #8aa4af solid;
-    /*display: none;*/
+    display: none;
 }
 .contenedorCuentasImagen{
     width: 100%;
@@ -295,7 +294,6 @@ td, th{
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position-y: 6px;
-
 }
 .btnSesionU, .btnSesionE{   
     bottom: 10px;
@@ -331,10 +329,5 @@ td, th{
         margin-left: 17%;
         width: 96%;
         margin-left: 4%;
-        /*        min-height: 100%;
-                background-color: #ECF0F5;
-                position: absolute;
-                top: 0px;
-                padding-top: 50px;        */
     }
 } 

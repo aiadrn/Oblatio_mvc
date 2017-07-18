@@ -265,27 +265,11 @@
                 </div>
             </div>
         </div>
-
         <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/jquery-cookie.js" type="text/javascript"></script>
         <script src="js/js.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.btnSesionU').click(function () {
-                    $('.modal-body').html($('#loginU').html());
-                    $('#myModal').modal();
-                });
-                $('.btnSesionE').click(function () {
-                    $('.modal-body').html($('#loginE').html());
-                    $('#myModal2').modal();
-                });
-                $('#d1_3_').click(function () {
-                    $('.modal-body').html($('#loginA').html());
-                    $('#myModal3').modal();
-                });
-            });
-        </script>        
+        <script src="js/jsPrincipal.js" type="text/javascript"></script>
     </body>
 </html>
 <?php

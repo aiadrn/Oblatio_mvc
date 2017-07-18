@@ -1,5 +1,3 @@
-//$.cookie('Prueba');
-     
 var contraido = $.cookie('Prueba');
 if (contraido != 'true') {
     $('#d2_1').css('left', '0%');
